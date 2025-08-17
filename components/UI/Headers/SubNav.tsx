@@ -1,4 +1,4 @@
-import { Input, Tabs, Flex } from "@chakra-ui/react";
+import { Input, Tabs, Flex, useBreakpointValue } from "@chakra-ui/react";
 import { BiBriefcase } from "react-icons/bi";
 import { GoHomeFill } from "react-icons/go";
 import { HiOutlineUser } from "react-icons/hi";
@@ -8,12 +8,14 @@ import { InputGroup } from "../Input/InputGroup";
 import { Search } from "@/public/assets/Search";
 
 const SubNav = () => {
+   const iconSize = useBreakpointValue({ base: 12, sm: 14, md: 18 });
+
   const tabs = [
-    { value: "members", label: "Dashboard", icon: <GoHomeFill size={18} />, enabled: true },
-    { value: "Budgeting", label: "Budget", icon: <BiBriefcase size={18} />, enabled: false },
-    { value: "calendar", label: "Calendar", icon: <HiOutlineUser size={18} />, enabled: false },
-    { value: "request", label: "Request", icon: <PiArticle size={18} />, enabled: false },
-    { value: "applications", label: "Applications", icon: <LuScrollText size={18} />, enabled: false },
+    { value: "members", label: "Dashboard", icon: <GoHomeFill size={iconSize} />, enabled: true },
+    { value: "Budgeting", label: "Budget", icon: <BiBriefcase size={iconSize} />, enabled: false },
+    { value: "calendar", label: "Calendar", icon: <HiOutlineUser size={iconSize} />, enabled: false },
+    { value: "request", label: "Request", icon: <PiArticle size={iconSize} />, enabled: false },
+    { value: "applications", label: "Applications", icon: <LuScrollText size={iconSize} />, enabled: false },
   ];
 
   return (
@@ -37,7 +39,7 @@ const SubNav = () => {
             value={tab.value}
             transition="all 0.25s ease-in-out"
             fontFamily="YourCustomFont, sans-serif"
-             disabled={!tab.enabled}  
+            disabled={!tab.enabled}
             _selected={{
               bg: "#F5F5F5",
               color: "#191919",
@@ -49,7 +51,7 @@ const SubNav = () => {
             _disabled={{
               opacity: 0.5,
               cursor: "not-allowed",
-              pointerEvents: "none",  
+              pointerEvents: "none",
             }}
             color="gray.500"
             fontSize={{ base: "8px", md: "14px" }}
@@ -67,7 +69,6 @@ const SubNav = () => {
           </Tabs.Trigger>
         ))}
 
-        
         <InputGroup
           startElement={<Search className="w-6 h-4 md:h-6 text-gray-700" />}
           startElementProps={{ color: "#E4E4E4", fontSize: { base: "8px", md: "xl" } }}
@@ -79,7 +80,7 @@ const SubNav = () => {
           mt={{ base: "2", lg: "0" }}
           border="1px solid #E4E4E4"
           _focus={{ boxShadow: "none", outline: "none" }}
-          py={{base: "0", md: "1" }}
+          py={{ base: "0", md: "1" }}
           _focusWithin={{
             boxShadow: "0 0 0 2px #3182ce",
             bg: "white",
