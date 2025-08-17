@@ -18,18 +18,7 @@ export const Layout = () => {
           <Tabs.Content value="members">
            <Dashboard />
           </Tabs.Content>
-          <Tabs.Content value="projects">
-            <div>Manage your projects</div>
-          </Tabs.Content>
-          <Tabs.Content value="users">
-            <div>Manage your users</div>
-          </Tabs.Content>
-          <Tabs.Content value="request">
-            <div>Manage your requests</div>
-          </Tabs.Content>
-          <Tabs.Content value="applications">
-            <div>Manage your applications</div>
-          </Tabs.Content>
+         
 
         </Box>
       </Tabs.Root>
