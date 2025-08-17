@@ -18,10 +18,10 @@ export const Navbar = () => {
 
   return (
     <>
-      <Flex bg={"#000"} justify="space-between" align="center" px={6} py={2}>
+      <Flex bg={"#000"} justify="space-between" align="center" px={{base:4,md:6}} py={2}>
         <Image
           src={logo.src}
-          width={{base: 70, md:100}}
+          width={{base: 30, md:100}}
           height={50}
           borderRadius="full"
           fit="contain"

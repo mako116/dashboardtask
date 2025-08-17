@@ -27,7 +27,7 @@ const SubNav = () => {
       justifyContent="space-between"
       d="flex"
       gap="2"
-      fontSize={{ base: "11px", md: "14px" }}
+      fontSize={{ base: "9px", md: "14px" }}
       alignItems="center"
     >
       <Flex flex={1} flexWrap="wrap" justifyContent="space-between">
@@ -42,8 +42,8 @@ const SubNav = () => {
               bg: "#F5F5F5",
               color: "#191919",
               fontWeight: "600",
-              px: "6",
-              py: "3",
+              px: "3",
+              py: "2",
               transform: "scale(1.05)",
             }}
             _disabled={{
@@ -52,7 +52,7 @@ const SubNav = () => {
               pointerEvents: "none",  
             }}
             color="gray.500"
-            fontSize={{ base: "11px", md: "14px" }}
+            fontSize={{ base: "8px", md: "14px" }}
             px={{ base: "2", md: "4" }}
             py={{ base: "1", md: "2" }}
             borderRadius="md"
@@ -69,16 +69,17 @@ const SubNav = () => {
 
         
         <InputGroup
-          startElement={<Search className="w-6 h-6 text-gray-700" />}
-          startElementProps={{ color: "#E4E4E4", fontSize: "xl" }}
-          w={{ base: "100%", lg: "300px" }}
+          startElement={<Search className="w-6 h-4 md:h-6 text-gray-700" />}
+          startElementProps={{ color: "#E4E4E4", fontSize: { base: "8px", md: "xl" } }}
+          w={{ base: "auto", lg: "300px" }}
+          h={{ base: "30px", md: "40px" }}
           bg="#F5F5F5"
           borderRadius="10px"
-          pr={3}
-          mt={{ base: "4", lg: "0" }}
+          pr={{ base: "1", md: "3" }}
+          mt={{ base: "2", lg: "0" }}
           border="1px solid #E4E4E4"
           _focus={{ boxShadow: "none", outline: "none" }}
-          py={1}
+          py={{base: "0", md: "1" }}
           _focusWithin={{
             boxShadow: "0 0 0 2px #3182ce",
             bg: "white",
@@ -87,7 +88,7 @@ const SubNav = () => {
           <Input
             ml={2}
             placeholder="Search listings, users here..."
-            fontSize="14"
+            fontSize={{ base: "8px", md: "14px" }}
             border="none"
             outline="none"
             _placeholderShown={{ color: "#919191" }}
