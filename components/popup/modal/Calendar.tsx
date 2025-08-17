@@ -27,7 +27,7 @@ const CalendarModal = ({ isOpen, onClose }: CalendarModalProps) => {
           >
             <FaArrowLeft size={18} />
           </Button>
-          <Text fontFamily="YourCustomFont, sans-serif" 
+          <Text fontFamily="CustomMediumFonts, sans-serif" 
           color="#fff"
           fontWeight="bold"
           fontSize={"1.2rem"}
