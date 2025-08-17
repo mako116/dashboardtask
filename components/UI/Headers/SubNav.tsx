@@ -67,7 +67,7 @@ const SubNav = () => {
           </Tabs.Trigger>
         ))}
 
-        {/* 🔍 Search Input */}
+        
         <InputGroup
           startElement={<Search className="w-6 h-6 text-gray-700" />}
           startElementProps={{ color: "#E4E4E4", fontSize: "xl" }}
