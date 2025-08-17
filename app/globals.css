@@ -13,7 +13,7 @@
   font-weight: 400;
   font-style: normal;
 }
- 
+  
 @font-face {
   font-family: "CustomBoldFont";
   src: url("/font/Euclid Circular B SemiBold.ttf") format("truetype");

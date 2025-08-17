@@ -37,7 +37,7 @@ const SubNav = () => {
             value={tab.value}
             transition="all 0.25s ease-in-out"
             fontFamily="YourCustomFont, sans-serif"
-             disabled={!tab.enabled} // ✅ disable all except Dashboard
+             disabled={!tab.enabled}  
             _selected={{
               bg: "#F5F5F5",
               color: "#191919",
@@ -47,9 +47,9 @@ const SubNav = () => {
               transform: "scale(1.05)",
             }}
             _disabled={{
-              // opacity: 0.5,
-              // cursor: "not-allowed",
-              pointerEvents: "none", // ensures it won’t trigger click
+              opacity: 0.5,
+              cursor: "not-allowed",
+              pointerEvents: "none",  
             }}
             color="gray.500"
             fontSize={{ base: "11px", md: "14px" }}
