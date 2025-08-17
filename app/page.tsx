@@ -1,7 +1,7 @@
-import { Layout } from "@/components/Layout/Layout";
+import DashBoard from "./Dashboard/page";
 
 export default function Home() {
   return (
-    <Layout />
+   <DashBoard />
   );
 }
