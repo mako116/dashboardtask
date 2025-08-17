@@ -17,20 +17,18 @@ const CalendarModal = ({ isOpen, onClose }: CalendarModalProps) => {
   return (
     <BaseModal isOpen={isOpen} onClose={onClose}>
       {/* Header */}
-      <Box p={2} className="flex items-center justify-between border-b border-gray-800 bg-black px-6  ">
+      <Box p={2}  className="flex items-center justify-between border-b border-gray-800 bg-black px-6  ">
         <div className="flex items-center gap-2">
           <Button
           color={'#fff'}
           bg={'transparent'}
-            onClick={onClose}
-           
-          >
-            <FaArrowLeft size={18} />
+            onClick={onClose} >
+            <FaArrowLeft  />
           </Button>
           <Text fontFamily="CustomMediumFonts, sans-serif" 
           color="#fff"
           fontWeight="bold"
-          fontSize={"1.2rem"}
+          fontSize={{ base: "1rem", md: "1.2rem" }}
            >
             Calendar
             </Text>
@@ -40,7 +38,7 @@ const CalendarModal = ({ isOpen, onClose }: CalendarModalProps) => {
           onClick={onClose}
           bg={'transparent'}
         >
-          <FaTimes size={18} />
+          <FaTimes  />
         </Button>
       </Box>
 

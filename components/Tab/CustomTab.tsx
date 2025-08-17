@@ -19,7 +19,7 @@ const CustomTabs = ({ defaultValue, options }: CustomTabsProps) => {
         bg="#FFFFFF"
         p="1"
         display="flex"
-        justifyContent={"end"}
+        justifyContent={{base: "flex-start", md: "end"}}
         gap="2"
        >
         {options.map((tab) => (
@@ -35,6 +35,7 @@ const CustomTabs = ({ defaultValue, options }: CustomTabsProps) => {
             rounded="md"
             px="4"
             py="2"
+            fontSize={{ base: "10px", md: "14px" }}
           >
             {tab.label}
           </Tabs.Trigger>
