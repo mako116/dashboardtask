@@ -21,7 +21,7 @@ export const Navbar = () => {
       <Flex bg={"#000"} justify="space-between" align="center" px={6} py={2}>
         <Image
           src={logo.src}
-          width={100}
+          width={{base: 70, md:100}}
           height={50}
           borderRadius="full"
           fit="contain"
