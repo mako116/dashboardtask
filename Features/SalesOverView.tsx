@@ -21,6 +21,7 @@ export const SalesOverView = () => {
       borderRadius="10px"
       px={4}
       pt={2}
+      pb={{ base: 4, md: 0 }}
       bg="white"
       w="100%"
     >
