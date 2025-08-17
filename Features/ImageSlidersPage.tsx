@@ -4,7 +4,7 @@ import React from 'react';
 
 const ImageSlidersPage = () => {
   return (
-    <Flex direction={{ base: 'column', md: 'row' }} gap={4} my={4} px={4}>
+    <Flex direction={{ base: 'column', md: 'row' }} gap={4} my={4} px={{base:2,md:4}}>
       {/* Slider 1 */}
       <Box flex="1" borderRadius="lg" overflow="hidden">
         <ImageSlider
